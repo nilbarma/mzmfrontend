@@ -1,0 +1,60 @@
+<div class="home-container-outer"> 
+ <div class="home-container-inner"> <mat-toolbar class="app-header-container" color="primary"> 
+   <app-header (toggle)="onToggle($event)" [sideNavOpened]="sideNavOpened"></app-header> 
+  </mat-toolbar> 
+  <div class="sidenav-container-outer"> 
+   <div class="sidenav-container-inner"> <mat-sidenav-container> 
+     <mat-sidenav [disableClose]="false" [mode]="isMobile ? 'over' : 'side'" [opened]="!isMobile || sideNavOpened" #sidenav> 
+      <mat-nav-list> <!-- Sidenav links --> 
+       <a id="home" mat-list-item [routerLink]="['./initial']" (click)="close()"> 
+        <mat-icon matListAvatar>
+          home 
+        </mat-icon> <h3 matLine>{{ 'home' | transloco }}</h3> <p matLine class="desc">{{ 'description' | transloco }}</p> </a> 
+        <a id="Booking" mat-list-item [routerLink]="['./booking']" (click)="close()"> 
+          <mat-icon matListAvatar>
+            grid_on 
+          </mat-icon> <h3 matLine> {{ 'bookingmanagement.Booking.navData' | transloco }} </h3> <p matLine class="desc"> {{ 'bookingmanagement.Booking.navDataSub' | transloco }} </p> </a>
+       <a id="Movie" mat-list-item [routerLink]="['./movie']" (click)="close()"> 
+        <mat-icon matListAvatar>
+          grid_on 
+        </mat-icon> <h3 matLine> {{ 'bookingmanagement.Movie.navData' | transloco }} </h3> <p matLine class="desc"> {{ 'bookingmanagement.Movie.navDataSub' | transloco }} </p> </a>
+        <a id="Theatre" mat-list-item [routerLink]="['./theatre']" (click)="close()"> 
+          <mat-icon matListAvatar>
+            grid_on 
+          </mat-icon> <h3 matLine> {{ 'bookingmanagement.Theatre.navData' | transloco }} </h3> <p matLine class="desc"> {{ 'bookingmanagement.Theatre.navDataSub' | transloco }} </p> </a>
+          <a id="Seat" mat-list-item [routerLink]="['./seat']" (click)="close()"> 
+            <mat-icon matListAvatar>
+              grid_on 
+            </mat-icon> <h3 matLine> {{ 'bookingmanagement.Seat.navData' | transloco }} </h3> <p matLine class="desc"> {{ 'bookingmanagement.Seat.navDataSub' | transloco }} </p> </a>
+            <a id="Screening" mat-list-item [routerLink]="['./screening']" (click)="close()"> 
+              <mat-icon matListAvatar>
+                grid_on 
+              </mat-icon> <h3 matLine> {{ 'bookingmanagement.Screening.navData' | transloco }} </h3> <p matLine class="desc"> {{ 'bookingmanagement.Screening.navDataSub' | transloco }} </p> </a>
+              <a id="Auditorium" mat-list-item [routerLink]="['./auditorium']" (click)="close()"> 
+                <mat-icon matListAvatar>
+                  grid_on 
+                </mat-icon> <h3 matLine> {{ 'bookingmanagement.Auditorium.navData' | transloco }} </h3> <p matLine class="desc"> {{ 'bookingmanagement.Auditorium.navDataSub' | transloco }} </p> </a>
+                <a id="SeatBooked" mat-list-item [routerLink]="['./seatbooked']" (click)="close()"> 
+                  <mat-icon matListAvatar>
+                    grid_on 
+                  </mat-icon> <h3 matLine> {{ 'bookingmanagement.SeatBooked.navData' | transloco }} </h3> <p matLine class="desc"> {{ 'bookingmanagement.SeatBooked.navDataSub' | transloco }} </p> </a>
+                <a id="User" mat-list-item [routerLink]="['./user']" (click)="close()"> 
+          <mat-icon matListAvatar>
+            grid_on 
+          </mat-icon> <h3 matLine> {{ 'bookingmanagement.User.navData' | transloco }} </h3> <p matLine class="desc"> {{ 'bookingmanagement.User.navDataSub' | transloco }} </p> </a> 
+      </mat-nav-list> 
+     </mat-sidenav> 
+     <mat-sidenav-content> 
+      <div class="content-container-outer"> 
+       <div class="content-container-inner"> <router-outlet></router-outlet> 
+       </div> <mat-toolbar class="public-footer"> 
+        <span>devonfw Application</span> 
+        <span>devonfw</span> 
+       </mat-toolbar> 
+      </div> 
+     </mat-sidenav-content> 
+    </mat-sidenav-container> 
+   </div> 
+  </div> 
+ </div> 
+</div>

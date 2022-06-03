@@ -1,0 +1,172 @@
+{
+  "buttons": {
+    "cancel": "CANCELAR",
+    "addItem": "Añadir fila",
+    "search": "BUSCAR",
+    "submit": "Enviar",
+    "editItem": "Editar fila",
+    "deleteItem": "Eliminar fila",
+    "save": "GUARDAR",
+    "clean": "LIMPIAR",
+    "close": "Cerrar"
+  },
+  "sampledatamanagement": {
+    "alert": {
+      "acceptBtn": "Sí, Eliminar",
+      "cancelBtn": "No, Cancelar",
+      "title": "Confirmación",
+      "message": "¿Seguro que deseas eliminar esta fila?"
+    },
+    "SampleData": {
+      "navDataSubDescription": "SampleData_EN_Descripción",
+      "navDataSub": "SampleData_ES",
+      "columns": {
+        "email": "Email_ES",
+        "surname": "Surname_ES",
+        "name": "Name_ES",
+        "age": "Age_ES"
+      },
+      "subtitle": "SampleData_ES_Descripción",
+      "title": "SampleData_ES_Grid",
+      "navData": "SampleData_ES"
+    },
+    "subtitle": "SampleData_ES_Descripción",
+    "editTitle": "Editar fila existente",
+    "title": "SampleData_ES_Tabla",
+    "addtitle": "Añadir nueva fila",
+    "searchTip": "Panel de búsqueda",
+    "sortTip": "Limpiar Ordenación"
+  },
+  "header": {
+    "EN": "Inglés",
+    "title": "devon4ng",
+    "error": "Error de acceso",
+    "ES": "Español"
+  },
+  "login": {
+    "password": "Contraseña",
+    "title": "Acceso",
+    "username": "Nombre de usuario",
+    "errorMsg": "Nombre de usuario o contraseña incorrectos"
+  },
+  "bookingmanagement": {
+    "alert": {
+      "acceptBtn": "Sí, Eliminar",
+      "cancelBtn": "No, Cancelar",
+      "title": "Confirmación",
+      "message": "¿Seguro que deseas eliminar esta fila?"
+    },
+    "Booking": {
+      "navDataSubDescription": "Booking_ES_Descripción",
+      "navDataSub": "Booking_ES",
+      "columns": {
+        "screeningId": "ScreeningId_ES",
+        "userId": "UserId_ES",
+        "bookingTime": "BookingTime_ES",
+        "booked": "Booked_ES",
+        "active": "Active_ES"
+      },
+      "subtitle": "Booking_ES_Descripción",
+      "title": "Booking_ES_Grid",
+      "navData": "Booking_ES"
+    },
+    "Auditorium": {
+      "navDataSubDescription": "Auditorium_ES_Descripción",
+      "navDataSub": "Auditorium_ES",
+      "columns": {
+        "seatCount": "SeatCount_ES",
+        "theatreId": "TheatreId_ES"
+      },
+      "subtitle": "Auditorium_ES_Descripción",
+      "title": "Auditorium_ES_Grid",
+      "navData": "Auditorium_ES"
+    },
+    "Movie": {
+      "navDataSubDescription": "Movie_ES_Descripción",
+      "navDataSub": "Movie_ES",
+      "columns": {
+        "title": "Title_ES",
+        "poster": "Poster_ES",
+        "genre": "Genre_ES",
+        "duration": "Duration_ES"
+      },
+      "subtitle": "Movie_ES_Descripción",
+      "title": "Movie_ES_Grid",
+      "navData": "Movie_ES"
+    },
+    "Screening": {
+      "navDataSubDescription": "Screening_ES_Descripción",
+      "navDataSub": "Screening_ES",
+      "columns": {
+        "movieId": "MovieId_ES",
+        "auditoriumId": "AuditoriumId_ES",
+        "date": "Date_ES",
+        "startTime": "StartTime_ES",
+        "endTime": "EndTime_ES",
+        "full": "Full_ES",
+        "price": "Price_ES"
+      },
+      "subtitle": "Screening_ES_Descripción",
+      "title": "Screening_ES_Grid",
+      "navData": "Screening_ES"
+    },
+    "SeatBooked": {
+      "navDataSubDescription": "SeatBooked_ES_Descripción",
+      "navDataSub": "SeatBooked_ES",
+      "columns": {
+        "seatId": "SeatId_ES",
+        "bookingId": "BookingId_ES",
+        "screeningId": "ScreeningId_ES"
+      },
+      "subtitle": "SeatBooked_ES_Descripción",
+      "title": "SeatBooked_ES_Grid",
+      "navData": "SeatBooked_ES"
+    },
+    "Seat": {
+      "navDataSubDescription": "Seat_ES_Descripción",
+      "navDataSub": "Seat_ES",
+      "columns": {
+        "seatNumber": "SeatNumber_ES",
+        "auditoriumId": "AuditoriumId_ES"
+      },
+      "subtitle": "Seat_ES_Descripción",
+      "title": "Seat_ES_Grid",
+      "navData": "Seat_ES"
+    },
+    "Theatre": {
+      "navDataSubDescription": "Theatre_ES_Descripción",
+      "navDataSub": "Theatre_ES",
+      "columns": {
+        "name": "Name_ES"
+      },
+      "subtitle": "Theatre_ES_Descripción",
+      "title": "Theatre_ES_Grid",
+      "navData": "Theatre_ES"
+    },
+    "User": {
+      "navDataSubDescription": "User_ES_Descripción",
+      "navDataSub": "User_ES",
+      "columns": {
+        "userName": "UserName_ES",
+        "password": "Password_ES"
+      },
+      "subtitle": "User_ES_Descripción",
+      "title": "User_ES_Grid",
+      "navData": "User_ES"
+    },
+    "subtitle": "User_ES_Descripción",
+    "editTitle": "Editar fila existente",
+    "title": "User_ES_Tabla",
+    "addtitle": "Añadir nueva fila",
+    "searchTip": "Panel de búsqueda",
+    "sortTip": "Limpiar Ordenación"
+  },
+  "LIKE": "ME GUSTA",
+  "example description": "Descripción de Ejemplo",
+  "description": "Descripción",
+  "ERROR": "ERROR",
+  "CLOSE": "CERRAR",
+  "SHARE": "COMPARTIR",
+  "home": "Inicio",
+  "example": "Ejemplo"
+}

@@ -1,0 +1,61 @@
+<h1 mat-dialog-title>{{title}}</h1>
+<form (ngSubmit)="dialogRef.close(items)" #dialogForm="ngForm">
+   <mat-form-field>
+    <input
+      matInput
+      type="number"
+      name="screeningId"
+      [placeholder]="'bookingmanagement.Booking.columns.screeningId' | transloco"
+      [(ngModel)]="items.screeningId"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      type="number"
+      name="userId"
+      [placeholder]="'bookingmanagement.Booking.columns.userId' | transloco"
+      [(ngModel)]="items.userId"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      type="any"
+      name="bookingTime"
+      [placeholder]="'bookingmanagement.Booking.columns.bookingTime' | transloco"
+      [(ngModel)]="items.bookingTime"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      type="boolean"
+      name="booked"
+      [placeholder]="'bookingmanagement.Booking.columns.booked' | transloco"
+      [(ngModel)]="items.booked"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      type="boolean"
+      name="active"
+      [placeholder]="'bookingmanagement.Booking.columns.active' | transloco"
+      [(ngModel)]="items.active"
+      required
+    />
+  </mat-form-field>
+  <mat-dialog-actions>
+    <button type="button" mat-button mat-dialog-close>
+      {{ 'buttons.cancel' | transloco }}
+    </button>
+    <button type="submit" mat-button [disabled]="!dialogForm.form.valid">
+      {{ 'buttons.save' | transloco }}
+    </button>
+  </mat-dialog-actions>
+</form>

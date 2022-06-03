@@ -1,0 +1,41 @@
+<h1 mat-dialog-title>{{title}}</h1>
+<form (ngSubmit)="dialogRef.close(items)" #dialogForm="ngForm">
+   <mat-form-field>
+    <input
+      matInput
+      type="number"
+      name="seatId"
+      [placeholder]="'bookingmanagement.SeatBooked.columns.seatId' | transloco"
+      [(ngModel)]="items.seatId"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      type="number"
+      name="bookingId"
+      [placeholder]="'bookingmanagement.SeatBooked.columns.bookingId' | transloco"
+      [(ngModel)]="items.bookingId"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      type="number"
+      name="screeningId"
+      [placeholder]="'bookingmanagement.SeatBooked.columns.screeningId' | transloco"
+      [(ngModel)]="items.screeningId"
+      required
+    />
+  </mat-form-field>
+  <mat-dialog-actions>
+    <button type="button" mat-button mat-dialog-close>
+      {{ 'buttons.cancel' | transloco }}
+    </button>
+    <button type="submit" mat-button [disabled]="!dialogForm.form.valid">
+      {{ 'buttons.save' | transloco }}
+    </button>
+  </mat-dialog-actions>
+</form>

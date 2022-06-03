@@ -1,0 +1,81 @@
+<h1 mat-dialog-title>{{title}}</h1>
+<form (ngSubmit)="dialogRef.close(items)" #dialogForm="ngForm">
+   <mat-form-field>
+    <input
+      matInput
+      type="number"
+      name="movieId"
+      [placeholder]="'bookingmanagement.Screening.columns.movieId' | transloco"
+      [(ngModel)]="items.movieId"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      type="number"
+      name="auditoriumId"
+      [placeholder]="'bookingmanagement.Screening.columns.auditoriumId' | transloco"
+      [(ngModel)]="items.auditoriumId"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      type="any"
+      name="date"
+      [placeholder]="'bookingmanagement.Screening.columns.date' | transloco"
+      [(ngModel)]="items.date"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      type="any"
+      name="startTime"
+      [placeholder]="'bookingmanagement.Screening.columns.startTime' | transloco"
+      [(ngModel)]="items.startTime"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      type="any"
+      name="endTime"
+      [placeholder]="'bookingmanagement.Screening.columns.endTime' | transloco"
+      [(ngModel)]="items.endTime"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      type="boolean"
+      name="full"
+      [placeholder]="'bookingmanagement.Screening.columns.full' | transloco"
+      [(ngModel)]="items.full"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      type="number"
+      name="price"
+      [placeholder]="'bookingmanagement.Screening.columns.price' | transloco"
+      [(ngModel)]="items.price"
+      required
+    />
+  </mat-form-field>
+  <mat-dialog-actions>
+    <button type="button" mat-button mat-dialog-close>
+      {{ 'buttons.cancel' | transloco }}
+    </button>
+    <button type="submit" mat-button [disabled]="!dialogForm.form.valid">
+      {{ 'buttons.save' | transloco }}
+    </button>
+  </mat-dialog-actions>
+</form>
