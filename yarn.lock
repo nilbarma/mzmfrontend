@@ -243,10 +243,10 @@
     tslib "^2.3.0"
     yargs "^17.2.1"
 
-"@angular/compiler@~13.1.0":
-  version "13.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-13.1.0.tgz#3c63cbd5cd87176aaf7d0e41c59ec03f6df3b2ca"
-  integrity sha512-l5qE3e+I/ogjVtXVHK0VoBOTE7N71dUcshI7Cvh5J7dFLKqbkYIr9xAP1D1tEVR6h9mzOVP5qD/M5ylR51rrOA==
+"@angular/compiler@~14.2.7":
+  version "14.2.7"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-14.2.7.tgz#a463e4cd007d739411d1a55ac5f377843eb4154f"
+  integrity sha512-2I8hZVM/tfUi06B6VuWgf5hWu0tgNlMCEZ1Ed4NEDkqJj+gs2l6kNVUf+FxI6hHMZTFkJPXOPx3pI5Hea5CxEQ==
   dependencies:
     tslib "^2.3.0"
 
